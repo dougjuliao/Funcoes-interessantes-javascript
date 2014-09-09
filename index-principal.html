@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Lógica de programação - JavaScript </title>
+		<meta charset="UTF-8">
+		<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+		<style>
+			body{
+				font-family: verdana,arial,helvetica;
+			}
+			.botao{
+				margin-top: 4px;
+				text-align: center;
+				background-color:#ccc;
+				border:1px solid #eee;
+				color:#fff;
+				font-size:12px;
+				width:135px;
+				padding:5px;
+				border-radius:4px;
+				box-shadow:3px 4px 8px -3px #525252;
+				cursor:pointer;
+			}
+			.botao:hover{
+				background-color:#666;
+			}
+			.botao:active{
+				color:#6D6D6D;
+				background-color:#fff;
+			}
+			.content-result{
+				border: 2px solid #003da5;
+				width: 829px;
+				height: 500px;
+				margin: -39px 122px;
+				float: right;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="geral">
+			<h3>Botões para executar as funções</h3>
+			<!--  BOTÕES PARA ESCOLHER UM EXEMPLO  -->
+			<div class="botao" onclick="criterioAvaliacao();"> Critério de Avaliação </div>
+			<div class="botao" onclick="teclas();"> Verificar teclas </div>
+			<div class="botao" onclick="tipoNumero();"> Impar e Par </div>
+			<div class="botao" onclick="regex();"> Pegar trecho do código </div>
+			
+			<div class="content-result">
+				
+				<!-- AVALIAÇÃO -->
+				<div id="criterio-avaliacao" style="display:none;">
+					<label>P1</label><input id="input-p1" type="text" />
+					<label>P2</label><input id="input-p2" type="text" />
+					<label>ATIV</label><input id="input-ativ" type="text" />
+					<button class="botao" id="btn">calcular critério</button>
+				</div>
+
+				<!-- VERIFICAR QUAL O CÓDIGO DA TECLA DIGITADA -->
+				<div id="teclas-key" style="display:none;">
+					<h4>Clique no botão para verificar o código das teclas</h4>
+					<button class="botao" id="btn1">Código teclas</button><br />
+					<div id="content_codigos"></div><br />
+					<div id="codigo_tecla"></div>
+				</div>
+
+				<!-- VERIFICAR SE O NUMERO É IMPAR OU PAR -->
+				<div id="par_impar" style="display:none;">
+					<h4>Veja se o numero é par ou impar</h4>
+					<input type="number" id="input_par_impar" value=" " /><input type="button" value="verificar" id="botao_numero"><br />
+					<div id="valor_numero"></div>
+				</div>
+
+				<!-- PEGANDO COONTEÚDO COM REGEX NA PRÓPRIA PÁGINA-->
+				<div id="regex_tester" style="display:none;">
+					<input type="button" id="botao_regex1" value="pegar todas as tags" />
+					<input type="button" id="botao_regex2" value="pegar todos os links" />
+					<input type="button" id="botao_regex3" value="pegar todos os values" />
+					<input type="button" id="botao_regex4" value="pegar numero de divs" />
+					<div id="resultado_regex"></div>
+				</div>
+			</div>
+			<!--<a href="teste 1">
+				<a href="teste 2"> 
+				<a href="teste 3"> 
+				<a href="teste 4"> 
+				<a href="teste 5"> --> 
+		</div>
+		<script type="text/javascript" charset="UTF-8" src="js-geral.js"></script>
+	</body>
+</html>
