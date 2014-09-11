@@ -1,4 +1,4 @@
-// ****************************************** CRITERIO DE AVALIA«√O SEMESTRAL ********************************************* //
+// ****************************************** CRITERIO DE AVALIA√á√ÉO SEMESTRAL ********************************************* //
 //console.log(document.URL);
 function criterioAvaliacao(){
 	var container	= document.getElementById("criterio-avaliacao"),
@@ -20,7 +20,7 @@ function criterioAvaliacao(){
 	fadeIn(container,1);	
 }
 
-// ****************************************** CAPITURAR C”DIGO TECLAS ***************************************************** //
+// ****************************************** CAPITURAR C√ìDIGO TECLAS ***************************************************** //
 
 function teclas(){
 	var container  = document.getElementById('teclas-key'),
@@ -49,8 +49,10 @@ function tecla(){
 document.body.onkeypress = tecla;
 
 //document.onkeypress = function(){ console.log(event.keyCode)};
+
+//console.log(String.fromCharCode(47));
 */
-// ****************************************** TESTANDO REGEX NA PR”PRIA P¡GINA *********************************************** //
+// ****************************************** TESTANDO REGEX NA PR√ìPRIA P√ÅGINA *********************************************** //
 function regex(){
 	var html_container	= document.getElementsByTagName("html")[0].outerHTML,
 		container 		= document.getElementById("regex_tester"),
@@ -60,7 +62,7 @@ function regex(){
 		regex_values	= document.getElementById("botao_regex3"),
 		regex_divs		= document.getElementById("botao_regex4");
 
-		// funÁ„o para pegar todas as tags da p·gina
+		// fun√ß√£o para pegar todas as tags da p√°gina
 		regex_tags.onclick = function(){
 			var valor = html_container.match(/<\/.+?>/g);
 			resultado.innerText = valor;
